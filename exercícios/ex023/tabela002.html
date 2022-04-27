@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 750px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead,tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) /*odd = 2n-1*/ {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) /*even = 2n*/ {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+
+    <!-- ANATOMIA PARA TABELAS GRANDES
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOTER
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Capital</th>
+                <th scope="col">População (2021)</th>
+                <th scope="col">% da pop. total</th>
+            </tr>
+        </thead>
+            
+            </tr>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>São Paulo</td>
+                <td>46.649.132</td>
+                <td>21,9%</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td>Belo Horizonte</td>
+                <td>21.411.923</td>
+                <td>10,1%</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>Rio de Janeiro</td>
+                <td>17.463.349</td>
+                <td>8,2%</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td>Salvador</td>
+                <td>14.985.284</td>
+                <td>7,1%</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td>Curitiba</td>
+                <td>11.597.484</td>
+                <td>5,4%</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>Porto Alegre</td>
+                <td>11.466.630</td>
+                <td>5,4%</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td>Recife</td>
+                <td>9.674.793</td>
+                <td>4,5%</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td>Fortaleza</td>
+                <td>9.240.580</td>
+                <td>4,3%</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td>Belém</td>
+                <td>8.777.124</td>
+                <td>4,1%</td>
+            </tr>
+
+            <tr>
+                <td>Santa Catarina</td>
+                <td>Florianipólis</td>
+                <td>7.338.473</td>
+                <td>3,4%</td>
+            </tr>
+
+            <tr>
+                <td>Goiás</td>
+                <td>Goiânia</td>
+                <td>7.206.589</td>
+                <td>3,4%</td>
+            </tr>
+
+            <tr>
+                <td>Maranhão</td>
+                <td>São Luís</td>
+                <td>7.153.262</td>
+                <td>3,4%</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td>Manaus</td>
+                <td>4.269.995</td>
+                <td>2,0%</td>
+            </tr>
+
+            <tr>
+                <td>Espírito Santo</td>
+                <td>Vitória</td>
+                <td>4.108.508</td>
+                <td>1,9%</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td>João Pessoa</td>
+                <td>4.059.905</td>
+                <td>1,9%</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso</td>
+                <td>Cuibá</td>
+                <td>3.567.234</td>
+                <td>1,7%</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>Natal</td>
+                <td>3.560.903</td>
+                <td>1,7%</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td>Maceió</td>
+                <td>3.365.351</td>
+                <td>1,6%</td>
+            </tr>
+
+            <tr>
+                <td>Piauí</td>
+                <td>Teresina</td>
+                <td>3.289.290</td>
+                <td>1,6%</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td>Brasília</td>
+                <td>3.094.325</td>
+                <td>1,4%</td>
+            </tr>
+
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>Campo Grande</td>
+                <td>2.839.188</td>
+                <td>1,3%</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td>Aracaju</td>
+                <td>2.338.474</td>
+                <td>1,1%</td>
+            </tr>
+
+            <tr>
+                <td>Rondônia</td>
+                <td>Porto Velho</td>
+                <td>1.815.278</td>
+                <td>0,8%</td>
+            </tr>
+
+            <tr>
+                <td>Tocantins</td>
+                <td>Palmas</td>
+                <td>1.607.363</td>
+                <td>0,7%</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td>Rio Branco</td>
+                <td>906.876</td>
+                <td>0,4%</td>
+            </tr>
+
+            <tr>
+                <td>Amapá</td>
+                <td>Macapá</td>
+                <td>877.613</td>
+                <td>0,4%</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td>Boa Vista</td>
+                <td>652.713</td>
+                <td>0,3%</td>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td> </td>
+                <td><strong>0000</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem possimus nobis assumenda libero voluptate officiis in recusandae suscipit fugit sit rerum natus blanditiis unde voluptatem eaque quam porro, quae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae quaerat vel magnam aliquid possimus doloribus architecto vero impedit reprehenderit commodi nihil, dignissimos mollitia blanditiis doloremque non sapiente optio fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda facere et aut suscipit a error sapiente rerum esse dolor hic maxime corrupti quos consequatur, dignissimos beatae natus excepturi at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur eveniet recusandae dolor sunt voluptas accusamus amet a tempore repudiandae, voluptatibus id perspiciatis. Consequuntur esse, obcaecati aliquid in adipisci magni!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem possimus nobis assumenda libero voluptate officiis in recusandae suscipit fugit sit rerum natus blanditiis unde voluptatem eaque quam porro, quae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae quaerat vel magnam aliquid possimus doloribus architecto vero impedit reprehenderit commodi nihil, dignissimos mollitia blanditiis doloremque non sapiente optio fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda facere et aut suscipit a error sapiente rerum esse dolor hic maxime corrupti quos consequatur, dignissimos beatae natus excepturi at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur eveniet recusandae dolor sunt voluptas accusamus amet a tempore repudiandae, voluptatibus id perspiciatis. Consequuntur esse, obcaecati aliquid in adipisci magni!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem possimus nobis assumenda libero voluptate officiis in recusandae suscipit fugit sit rerum natus blanditiis unde voluptatem eaque quam porro, quae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae quaerat vel magnam aliquid possimus doloribus architecto vero impedit reprehenderit commodi nihil, dignissimos mollitia blanditiis doloremque non sapiente optio fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda facere et aut suscipit a error sapiente rerum esse dolor hic maxime corrupti quos consequatur, dignissimos beatae natus excepturi at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur eveniet recusandae dolor sunt voluptas accusamus amet a tempore repudiandae, voluptatibus id perspiciatis. Consequuntur esse, obcaecati aliquid in adipisci magni!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem possimus nobis assumenda libero voluptate officiis in recusandae suscipit fugit sit rerum natus blanditiis unde voluptatem eaque quam porro, quae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae quaerat vel magnam aliquid possimus doloribus architecto vero impedit reprehenderit commodi nihil, dignissimos mollitia blanditiis doloremque non sapiente optio fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda facere et aut suscipit a error sapiente rerum esse dolor hic maxime corrupti quos consequatur, dignissimos beatae natus excepturi at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur eveniet recusandae dolor sunt voluptas accusamus amet a tempore repudiandae, voluptatibus id perspiciatis. Consequuntur esse, obcaecati aliquid in adipisci magni!</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem possimus nobis assumenda libero voluptate officiis in recusandae suscipit fugit sit rerum natus blanditiis unde voluptatem eaque quam porro, quae ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae quaerat vel magnam aliquid possimus doloribus architecto vero impedit reprehenderit commodi nihil, dignissimos mollitia blanditiis doloremque non sapiente optio fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda facere et aut suscipit a error sapiente rerum esse dolor hic maxime corrupti quos consequatur, dignissimos beatae natus excepturi at! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat tenetur eveniet recusandae dolor sunt voluptas accusamus amet a tempore repudiandae, voluptatibus id perspiciatis. Consequuntur esse, obcaecati aliquid in adipisci magni!</p>
+</body>
+</html>
